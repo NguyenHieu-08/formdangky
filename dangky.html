@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form đăng ký</title>
+        <style>
+            body{
+                text-align: left;
+            }
+            div {
+                padding: 20px 20px 20px 20px;
+            }
+            div > label{
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input[type='text'], input[type='number']{
+                border-radius: 3px;
+                width: 200px;
+            }
+            input[type='submit']{
+                background-color: rgb(71, 74, 238);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                width: 80px;
+                height: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form đăng ký</h1>
+        <form class="form-1" method="POST" action="http://demo.codegym.vn/6/registration_form/register.php">
+            <div>
+                <label class="name">Họ và tên:</label>
+                <br>
+                <input id="name" name="name" type="text" placeholder="Nhập họ và tên">
+            </div>
+            <div>
+                <label class="email">Email:</label>
+                <br>
+                <input id="email" name="email" type="text" placeholder="Nhập email">
+            </div>
+            <div>
+                <label class="phone">Só điện thoại:</label>
+                <br>
+                <input id="phone" name="phone" type="number" placeholder="Nhập số điện thoại">
+            </div>
+            <div>
+                <label class="gender">Giới tính:</label>
+                <br>
+                <input id="male" name="gender" type="radio" checked> Nam
+                <input id="female" name="gender" type="radio"> Nữ
+            </div>
+            <div>
+                <input type="submit" value="Đăng ký">
+            </div>
+        </form>
+    </body>
+</html>
